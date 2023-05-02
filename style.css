@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: darkgrey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding:0 20px;
+    min-height: 100vh;
+}
+.full-height{
+    display: flex;
+    flex-direction: column;
+}
+.server-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: inherit;
+}
+.server-name{
+    margin-left: 2rem;
+}
+.main-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav a{
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+.main-nav a:hover{
+    color: #000000;
+}
+.main-header{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    animation: fadein 3s;
+}
+.subtitle{
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+.server-name{
+    text-align: center;
+}
+.home-main-section{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 7%;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@media screen and (max-width: 375px){
+    *{
+        font-size: 1rem;
+    }
+}
